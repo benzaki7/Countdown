@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .main {
+    height: 100vh;
+    width: 100vw;
+    background: url(./Images/Backround.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(45, 52, 54, 0.8);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 20vh 0 0 0;
+    color: #fff;
+  }
+  
+  #anouncement {
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    margin: 20vh 0 10vh;
+    display: none;
+  }
+  
+.deadline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin-top: 5vh;
+  }
+
+.deadline {
+    width: 100px;
+    height: 100px;
+    background: none;
+    color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all linear 0.3s;
+  }
+  .deadline:hover {
+    color: #fc3a52;
+  }
+
+.deadline h4 {
+    font-size: 3rem;
+    font-weight: 900; 
+}
+
+.deadline span {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+#email {
+  width: 250px;
+  height: 33px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#email::placeholder {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #2a363b;
+}
+
+.btn {
+  width: 110px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fc3a52;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  outline: none;
+  transition: all ease 0.4s;
+}
+.btn:hover {
+  background-color: #ff2e63;
+}
+
+.icons {
+    font-size: 1.5rem;
+    width: 20%;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+.icons i {
+    transition: all 0.4s ease;
+  }
+  
+.icons i:hover {
+    color: #fc3a52;
+    transform: translateY(15px);
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 20px;
+}
+
+  /* Media Queries */
+  @media screen and (max-width: 1000px) {
+    .deadline-container {
+      width: 50%;
+    }
+    .icons {
+      width: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 673px) {
+    .deadline-container {
+      width: 60%;
+    }
+    .icons {
+      width: 35%;
+      font-size: 1.2rem;
+    }
+  }
+  
+
+  @media screen and (max-width: 520px) {
+    .deadline-container {
+      width: 70%;
+    }
+    #email {
+      width: 200px;
+      height: 25px;
+      margin-right: 10px;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    #email::placeholder {
+      font-size: 1rem;
+      font-weight: 300;
+    }  
+    .btn {
+      width: 100px;
+      height: 27px;     
+      font-size: 1rem;
+    }
+    .icons {
+      width: 40%;
+      font-size: 1.1rem;
+    }
+  }
+  
+
+  @media screen and (max-width: 410px) {
+    .main h1 {
+      margin: 10vh 0 4vh 0;
+      font-size: 1.8rem;
+    }
+    .deadline h4 {
+      font-size: 2rem;
+      font-weight: 900; 
+  }
+  
+  .deadline span {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+    
+  #email {
+    width: 180px;
+    height: 25px;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  #email::placeholder {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }  
+  .btn {
+    width: 90px;
+    height: 27px;     
+    font-size: 0.9rem;
+  }
+
+  .main .icons {
+    width: 45%;
+    font-size: 1rem;
+  }
+}
+  
