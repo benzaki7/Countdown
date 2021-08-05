@@ -1,6 +1,6 @@
 const x = setInterval(function() {
 
-  const countDownDate = new Date(2021, 0, 1, 8, 0, 0).getTime();
+  const countDownDate = new Date(2021, 12, 1, 8, 0, 0).getTime();
   const now = new Date().getTime();
   const distance = countDownDate - now;
 
